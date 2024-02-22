@@ -13,12 +13,14 @@
   <link rel="stylesheet" href="{{url('template/vendors/linericon/style.css')}}">
   <link rel="stylesheet" href="{{url('template/vendors/owl-carousel/owl.theme.default.min.css')}}">
   <link rel="stylesheet" href="{{url('template/vendors/owl-carousel/owl.carousel.min.css')}}">
-
   <link rel="stylesheet" href="{{url('template/css/style.css')}}">
   <link rel="stylesheet" href="{{url('template/css/estilo.css')}}">
 </head>
 <body>
- @yield('content')
+
+    @include('header')
+    @yield('content')
+    @include('footer')
 
   <!--================ Start Footer Area =================-->
   <footer class="footer-area section-padding">

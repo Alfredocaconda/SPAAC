@@ -17,7 +17,7 @@
       </div>
     </section>
   <!--================ Start Footer Area =================-->
-  @endsection
+@endsection
 
 
 
