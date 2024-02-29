@@ -1,27 +1,16 @@
-.inputs{
-    margin-top: 70px;
-    text-align: center;
-    align-items: center;
+.pesquisar{
+    width: 100%;
+    display: flex;
     justify-content: center;
+    margin-top: 100px;
 }
-.botao{
-    background: none;
-   border: none;
+
+input{
+    width: 30%;
 }
-.botao:hover{
-    color: #ff9907;
+.butao{
+    border: none;
 }
-.ul{
-    margin-top: 10px;
-    display: block;
-    padding-left: 0;
-}
-.li{
-    display: inline-flex;
-    margin-left: 20px;
-    color: black;
-    cursor: pointer;
-}
-.li:hover{
-    border-bottom:2px solid #ff9907;
+.butao:hover{
+   color: #ff9907;
 }

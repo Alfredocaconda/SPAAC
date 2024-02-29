@@ -1,34 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>@yield('title')</title>
-	<link rel="icon" href="{{url('template/img/Fevicon.png')}}" type="{{url('template/image/png')}}">
-
-  <link rel="stylesheet" href="{{url('template/vendors/bootstrap/bootstrap.min.css')}}">
-  <link rel="stylesheet" href="{{url('template/vendors/fontawesome/css/all.min.css')}}">
-  <link rel="stylesheet" href="{{url('template/vendors/themify-icons/themify-icons.css')}}">
-  <link rel="stylesheet" href="{{url('template/vendors/linericon/style.css')}}">
-  <link rel="stylesheet" href="{{url('template/vendors/owl-carousel/owl.theme.default.min.css')}}">
-  <link rel="stylesheet" href="{{url('template/vendors/owl-carousel/owl.carousel.min.css')}}">
-  <link rel="stylesheet" href="{{url('template/css/style.css')}}">
-  <link rel="stylesheet" href="{{url('template/css/estilo.css')}}">
-</head>
-<body>
-
-    @include('header')
-    @yield('content')
-    @include('footer')
-
-  <!--================ Start Footer Area =================-->
-  <footer class="footer-area section-padding">
+<!--================ Start Footer Area =================-->
+<footer class="footer-area section-padding">
     <div class="container">
       <div class="row">
         <div class="col-lg-3  col-md-6 col-sm-6">
           <div class="single-footer-widget">
-            <h6>About Us</h6>
+            <h6>Sobre SPAAC</h6>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
               magna aliqua.
@@ -102,18 +78,9 @@
       </div>
       <div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
         <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This SPAAC is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">SPAAC</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
       </div>
     </div>
   </footer>
   <!--================ End Footer Area =================-->
-
-  <script src="{{url('template/vendors/jquery/jquery-3.2.1.min.js')}}"></script>
-  <script src="{{url('template/vendors/bootstrap/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{url('template/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
-  <script src="{{url('template/js/jquery.ajaxchimp.min.js')}}"></script>
-  <script src="{{url('template/js/mail-script.js')}}"></script>
-  <script src="{{url('template/js/main.js')}}"></script>
-</body>
-</html>
