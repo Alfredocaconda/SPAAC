@@ -14,20 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('principal.Home.home');
 });
 Route::get('/autores', function () {
-    return view('autores');
+    return view('principal.Autores.autores');
 });
 Route::get('/artigos', function () {
-    return view('artigos');
+    return view('principal.Artigos.artigos');
 });
-Route::get('/monografia', function () {
-    return view('monografia');
+Route::get('/sobre', function () {
+    return view('principal.Sobre.sobre');
 });
 Route::get('/admin', function () {
-    return view('admin');
+    return view('Admin.dashboard.home');
 });
-Route::get('/valor', function () {
-    return view('valor');
+Route::get('/sobre', function () {
+    return view('principal.Sobre.sobre');
+});
+Route::get('/sobre', function () {
+    return view('principal.Sobre.sobre');
+});
+Route::get('/sobre', function () {
+    return view('principal.Sobre.sobre');
 });

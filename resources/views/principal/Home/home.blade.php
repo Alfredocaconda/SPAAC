@@ -1,35 +1,27 @@
-@extends('layout.corpo')
-@extends('layout.cabecalho')
-@section('title','SPAAC')
+@extends('principal.layout.app')
 
-@section('cabecalho')
-@section('content')
-  
-  <main class="site-main">
-    <!--================Hero Banner start =================-->  
-    <section class="mb-30px">
-      <div class="container">
-        <div class="inputs" >
-        <input type="text" style="width: 50%;" placeholder="Buscar artigos Cientificos">
-      <button  class="botao">Pesquisar</button>
-      <ul class="ul">
-        <li class="li">Coleções</li>
-        <li class="li">Periodicos</li>
-      </ul>
-        </div>
-      
-      </div>
-       
-    </section>
-    <!--================Hero Banner end =================-->  
+<!---- A PARTE DA ALTERCAO DO TITULO---->
+@section('titulo','Pagina Inicial')
+<!---- A PARTE DO LINK DO NOSSO PROJECTO---->
+@section('links')
+<!----- para poder incluir os links,
+pegamos a raiz e depois as pastas ou arquivos que estao dentro da raiz de onde tem o nosso css------>
+@include('principal.layout.css.links')
+@endsection
 
-    <!--================ Blog slider start =================-->  
-    <section>
+@section('nav')
+@include('principal.layout.Nav.nav_home')
+@endsection
+
+<!---- A PARTE DA NOSSA NAVEGACAO DO PROJECTO OU PAGINA---->
+@section('navegacao')
+   <!--================ Blog slider start =================-->  
+   <section>
       <div class="container">
         <div class="owl-carousel owl-theme blog-slider">
           <div class="card blog__slide text-center">
             <div class="blog__slide__img">
-              <img class="card-img rounded-0" src="{{url('template/img/livros/obvioTambem.jpg')}}" alt="">
+              <img class="card-img rounded-0" src="{{url('template/img/livros/8passos.jpg')}}" alt="">
             </div>
             <div class="blog__slide__content">
               <a class="blog__slide__label" href="#">Fashion</a>
@@ -39,7 +31,7 @@
           </div>
           <div class="card blog__slide text-center">
             <div class="blog__slide__img">
-              <img class="card-img rounded-0" src="{{url('template/img/livros/mulherrica.jpg')}}" alt="">
+              <img class="card-img rounded-0" src="{{url('template/img/livros/8passos.jpg')}}" alt="">
             </div>
             <div class="blog__slide__content">
               <a class="blog__slide__label" href="#">Fashion</a>
@@ -49,7 +41,7 @@
           </div>
           <div class="card blog__slide text-center">
             <div class="blog__slide__img">
-              <img class="card-img rounded-0" src="{{url('template/img/livros/ansiedade.jpg')}}" alt="">
+              <img class="card-img rounded-0" src="{{url('template/img/livros/8passos.jpg')}}" alt="">
             </div>
             <div class="blog__slide__content">
               <a class="blog__slide__label" href="#">Fashion</a>
@@ -59,7 +51,7 @@
           </div>
           <div class="card blog__slide text-center">
             <div class="blog__slide__img">
-              <img class="card-img rounded-0" src="{{url('template/img/livros/cury.jpg')}}" alt="">
+              <img class="card-img rounded-0" src="{{url('template/img/livros/8passos.jpg')}}" alt="">
             </div>
             <div class="blog__slide__content">
               <a class="blog__slide__label" href="#">Fashion</a>
@@ -69,7 +61,7 @@
           </div>
           <div class="card blog__slide text-center">
             <div class="blog__slide__img">
-              <img class="card-img rounded-0" src="{{url('template/img/livros/psicologia.jpg')}}" alt="">
+              <img class="card-img rounded-0" src="{{url('template/img/livros/8passos.jpg')}}" alt="">
             </div>
             <div class="blog__slide__content">
               <a class="blog__slide__label" href="#">Fashion</a>
@@ -79,47 +71,7 @@
           </div>
           <div class="card blog__slide text-center">
             <div class="blog__slide__img">
-              <img class="card-img rounded-0" src="{{url('template/img/livros/pense de novo.jpg')}}" alt="">
-            </div>
-            <div class="blog__slide__content">
-              <a class="blog__slide__label" href="#">Fashion</a>
-              <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-              <p>2 days ago</p>
-            </div>
-          </div>
-          <div class="card blog__slide text-center">
-            <div class="blog__slide__img">
-              <img class="card-img rounded-0" src="{{url('template/img/livros/habito.jpg')}}" alt="">
-            </div>
-            <div class="blog__slide__content">
-              <a class="blog__slide__label" href="#">Fashion</a>
-              <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-              <p>2 days ago</p>
-            </div>
-          </div>
-          <div class="card blog__slide text-center">
-            <div class="blog__slide__img">
-              <img class="card-img rounded-0" src="{{url('template/img/livros/lei.jpg')}}" alt="">
-            </div>
-            <div class="blog__slide__content">
-              <a class="blog__slide__label" href="#">Fashion</a>
-              <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-              <p>2 days ago</p>
-            </div>
-          </div>
-          <div class="card blog__slide text-center">
-            <div class="blog__slide__img">
-              <img class="card-img rounded-0" src="{{url('template/img/livros/poder.jpg')}}" alt="">
-            </div>
-            <div class="blog__slide__content">
-              <a class="blog__slide__label" href="#">Fashion</a>
-              <h3><a href="#">New york fashion week's continued the evolution</a></h3>
-              <p>2 days ago</p>
-            </div>
-          </div>
-          <div class="card blog__slide text-center">
-            <div class="blog__slide__img">
-              <img class="card-img rounded-0" src="{{url('template/img/livros/rico.jpg')}}" alt="">
+              <img class="card-img rounded-0" src="{{url('template/img/livros/8passos.jpg')}}" alt="">
             </div>
             <div class="blog__slide__content">
               <a class="blog__slide__label" href="#">Fashion</a>
@@ -131,7 +83,10 @@
       </div>
     </section>
     <!--================ Blog slider end =================-->  
+@endsection
 
+<!---- A PARTE ONDE ESTA O NOSSO CONTEUDO EM GERAL ALTERCAO DO TITULO---->
+@section('conteudo')
     <!--================ Start Blog Post Area =================-->
     <section class="blog-post-area section-margin mt-4">
       <div class="container">
@@ -139,7 +94,7 @@
           <div class="col-lg-8">
             <div class="single-recent-blog-post">
               <div class="thumb">
-                <img class="img-fluid" src="{{url('template/img/livros/ansiedad.jpg')}}" alt="">
+                <img class="img-fluid" src="{{url('template/img/autores/autor1.jpg')}}" alt="">
                 <ul class="thumb-info">
                   <li><a href="#"><i class="ti-user"></i>Admin</a></li>
                   <li><a href="#"><i class="ti-notepad"></i>January 12,2019</a></li>
@@ -159,7 +114,7 @@
 
             <div class="single-recent-blog-post">
               <div class="thumb">
-                <img class="img-fluid" src="{{url('template/img/blog/blog2.png')}}" alt="">
+                <img class="img-fluid" src="{{url('template/img/autores/autor.jpg')}}" alt="">
                 <ul class="thumb-info">
                   <li><a href="#"><i class="ti-user"></i>Admin</a></li>
                   <li><a href="#"><i class="ti-notepad"></i>January 12,2019</a></li>
@@ -179,7 +134,7 @@
 
             <div class="single-recent-blog-post">
               <div class="thumb">
-                <img class="img-fluid" src="{{url('template/img/blog/blog3.png')}}" alt="">
+                <img class="img-fluid" src="{{url('template/img/autores/autor3.jpg')}}" alt="">
                 <ul class="thumb-info">
                   <li><a href="#"><i class="ti-user"></i>Admin</a></li>
                   <li><a href="#"><i class="ti-notepad"></i>January 12,2019</a></li>
@@ -199,7 +154,7 @@
 
             <div class="single-recent-blog-post">
               <div class="thumb">
-                <img class="img-fluid" src="{{url('template/img/blog/blog4.png')}}" alt="">
+                <img class="img-fluid" src="{{url('template/img/autores/informatica.jpeg')}}" alt="">
                 <ul class="thumb-info">
                   <li><a href="#"><i class="ti-user"></i>Admin</a></li>
                   <li><a href="#"><i class="ti-notepad"></i>January 12,2019</a></li>
@@ -383,6 +338,15 @@
     </section>
     <!--================ End Blog Post Area =================-->
   </main>
+@endsection
 
-  <!--================ Start Footer Area =================-->
-  @endsection
+ <!--================ INCLUINDO O RODAPE =================-->
+@section('rodape')
+ @include('principal.layout.Footer.rodape')
+@endsection
+
+@section('script')
+@include('principal.layout.Script.script')
+@endsection
+
+ 

@@ -1,20 +1,53 @@
-@extends('layout.corpo_admin')
-@section('title','Admin')
-@section('content')
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Pluto - Responsive Bootstrap Admin Panel Templates</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- site icon -->
+      <link rel="icon" href="images/fevicon.png" type="image/png" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- site css -->
+      <link rel="stylesheet" href="style.css" />
+      <!-- responsive css -->
+      <link rel="stylesheet" href="css/responsive.css" />
+      <!-- color css -->
+      <link rel="stylesheet" href="css/color_2.css" />
+      <!-- select bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap-select.css" />
+      <!-- scrollbar css -->
+      <link rel="stylesheet" href="css/perfect-scrollbar.css" />
+      <!-- custom css -->
+      <link rel="stylesheet" href="css/custom.css" />
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body class="dashboard dashboard_2">
       <div class="full_container">
          <div class="inner_container">
             <!-- Sidebar  -->
             <nav id="sidebar">
                <div class="sidebar_blog_1">
                   <div class="sidebar-header">
-                  <div class="logo_section">
-                        <a href="index.html"><img class="logo_icon img-responsive" src="{{url('tamplate_admin/images/logo/logo_icon.png')}}" alt="#" /></a>
+                     <div class="logo_section">
+                        <a href="index.html"><img class="logo_icon img-responsive" src="images/logo/logo_icon.png" alt="#" /></a>
                      </div>
                   </div>
                   <div class="sidebar_user_info">
                      <div class="icon_setting"></div>
                      <div class="user_profle_side">
-                        <div class="user_img"><img class="img-responsive" src="{{url('template_admin/images/layout_img/user_img.jpg')}}" alt="#" /></div>
+                        <div class="user_img"><img class="img-responsive" src="images/layout_img/user_img.jpg" alt="#" /></div>
                         <div class="user_info">
                            <h6>John David</h6>
                            <p><span class="online_animation"></span> Online</p>
@@ -92,7 +125,7 @@
                      <div class="full">
                         <button type="button" id="sidebarCollapse" class="sidebar_toggle"><i class="fa fa-bars"></i></button>
                         <div class="logo_section">
-                           <a href="index.html"><img class="img-responsive" src="{{url('template_admin/images/logo/logo.png')}}" alt="#" /></a>
+                           <a href="index.html"><img class="img-responsive" src="images/logo/logo_black.png" alt="#" /></a>
                         </div>
                         <div class="right_topbar">
                            <div class="icon_info">
@@ -103,7 +136,7 @@
                               </ul>
                               <ul class="user_profile_dd">
                                  <li>
-                                    <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" src="{{url('template_admin/images/layout_img/user_img.jpg')}}" alt="#" /><span class="name_user">John David</span></a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" src="images/layout_img/user_img.jpg" alt="#" /><span class="name_user">John David</span></a>
                                     <div class="dropdown-menu">
                                        <a class="dropdown-item" href="profile.html">My Profile</a>
                                        <a class="dropdown-item" href="settings.html">Settings</a>
@@ -130,10 +163,10 @@
                      </div>
                      <div class="row column1">
                         <div class="col-md-6 col-lg-3">
-                           <div class="full counter_section margin_bottom_30">
+                           <div class="full counter_section margin_bottom_30 yellow_bg">
                               <div class="couter_icon">
                                  <div> 
-                                    <i class="fa fa-user yellow_color"></i>
+                                    <i class="fa fa-user"></i>
                                  </div>
                               </div>
                               <div class="counter_no">
@@ -145,10 +178,10 @@
                            </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                           <div class="full counter_section margin_bottom_30">
+                           <div class="full counter_section margin_bottom_30 blue1_bg">
                               <div class="couter_icon">
                                  <div> 
-                                    <i class="fa fa-clock-o blue1_color"></i>
+                                    <i class="fa fa-clock-o"></i>
                                  </div>
                               </div>
                               <div class="counter_no">
@@ -160,10 +193,10 @@
                            </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                           <div class="full counter_section margin_bottom_30">
+                           <div class="full counter_section margin_bottom_30 green_bg">
                               <div class="couter_icon">
                                  <div> 
-                                    <i class="fa fa-cloud-download green_color"></i>
+                                    <i class="fa fa-cloud-download"></i>
                                  </div>
                               </div>
                               <div class="counter_no">
@@ -175,10 +208,10 @@
                            </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
-                           <div class="full counter_section margin_bottom_30">
+                           <div class="full counter_section margin_bottom_30 red_bg">
                               <div class="couter_icon">
                                  <div> 
-                                    <i class="fa fa-comments-o red_color"></i>
+                                    <i class="fa fa-comments-o"></i>
                                  </div>
                               </div>
                               <div class="counter_no">
@@ -282,7 +315,14 @@
                                     <div class="col-md-12">
                                        <div class="content">
                                           <div class="area_chart">
-                                             <canvas height="120" id="canvas"></canvas>
+                                             <div class="row">
+                                                <div class="col-md-6">
+                                                   <canvas id="chart-2"></canvas>
+                                                </div>
+                                                <div class="col-md-6">
+                                                   <canvas id="chart-1"></canvas>
+                                                </div>
+                                             </div>
                                           </div>
                                        </div>
                                     </div>
@@ -309,17 +349,17 @@
                                              <!-- Wrapper for carousel items -->
                                              <div class="carousel-inner">
                                                 <div class="item carousel-item active">
-                                                   <div class="img-box"><img src="{{url('template_admin/images/layout_img/user_img.jpg')}}" alt=""></div>
+                                                   <div class="img-box"><img src="images/layout_img/user_img.jpg" alt=""></div>
                                                    <p class="testimonial">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae..</p>
                                                    <p class="overview"><b>Michael Stuart</b>Seo Founder</p>
                                                 </div>
                                                 <div class="item carousel-item">
-                                                   <div class="img-box"><img src="{{url('template_admin/images/layout_img/user_img.jpg')}}" alt=""></div>
+                                                   <div class="img-box"><img src="images/layout_img/user_img.jpg" alt=""></div>
                                                    <p class="testimonial">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae..</p>
                                                    <p class="overview"><b>Michael Stuart</b>Seo Founder</p>
                                                 </div>
                                                 <div class="item carousel-item">
-                                                   <div class="img-box"><img src="{{url('template_admin/images/layout_img/user_img.jpg')}}" alt=""></div>
+                                                   <div class="img-box"><img src="images/layout_img/user_img.jpg" alt=""></div>
                                                    <p class="testimonial">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae..</p>
                                                    <p class="overview"><b>Michael Stuart</b>Seo Founder</p>
                                                 </div>
@@ -386,7 +426,7 @@
                         <!-- end progress bar -->
                      </div>
                      <div class="row column4 graph">
-                        <div class="col-md-6 margin_bottom_30">
+                        <div class="col-md-6">
                            <div class="dash_blog">
                               <div class="dash_blog_inner">
                                  <div class="dash_head">
@@ -422,15 +462,15 @@
                                  <div class="msg_list_main">
                                     <ul class="msg_list">
                                        <li>
-                                          <span><img src="{{url('template_admin/images/layout_img/msg2.png')}}" class="img-responsive" alt="#" /></span>
+                                          <span><img src="images/layout_img/msg2.png" class="img-responsive" alt="#" /></span>
                                           <span>
-                                          <span class="name_user">Herman Beck</span>
+                                          <span class="name_user">John Smith</span>
                                           <span class="msg_user">Sed ut perspiciatis unde omnis.</span>
                                           <span class="time_ago">12 min ago</span>
                                           </span>
                                        </li>
                                        <li>
-                                          <span><img src="{{url('template_admin/images/layout_img/msg3.png')}}" class="img-responsive" alt="#" /></span>
+                                          <span><img src="images/layout_img/msg3.png" class="img-responsive" alt="#" /></span>
                                           <span>
                                           <span class="name_user">John Smith</span>
                                           <span class="msg_user">On the other hand, we denounce.</span>
@@ -438,7 +478,7 @@
                                           </span>
                                        </li>
                                        <li>
-                                          <span><img src="{{url('template_admin/images/layout_img/msg2.png')}}" class="img-responsive" alt="#" /></span>
+                                          <span><img src="images/layout_img/msg2.png" class="img-responsive" alt="#" /></span>
                                           <span>
                                           <span class="name_user">John Smith</span>
                                           <span class="msg_user">Sed ut perspiciatis unde omnis.</span>
@@ -446,7 +486,7 @@
                                           </span>
                                        </li>
                                        <li>
-                                          <span><img src="{{url('template_admin/images/layout_img/msg3.png')}}" class="img-responsive" alt="#" /></span>
+                                          <span><img src="images/layout_img/msg3.png" class="img-responsive" alt="#" /></span>
                                           <span>
                                           <span class="name_user">John Smith</span>
                                           <span class="msg_user">On the other hand, we denounce.</span>
@@ -476,4 +516,28 @@
             </div>
          </div>
       </div>
-   @endsection
+      <!-- jQuery -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- wow animation -->
+      <script src="js/animate.js"></script>
+      <!-- select country -->
+      <script src="js/bootstrap-select.js"></script>
+      <!-- owl carousel -->
+      <script src="js/owl.carousel.js"></script> 
+      <!-- chart js -->
+      <script src="js/Chart.min.js"></script>
+      <script src="js/Chart.bundle.min.js"></script>
+      <script src="js/utils.js"></script>
+      <script src="js/analyser.js"></script>
+      <!-- nice scrollbar -->
+      <script src="js/perfect-scrollbar.min.js"></script>
+      <script>
+         var ps = new PerfectScrollbar('#sidebar');
+      </script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+      <script src="js/chart_custom_style2.js"></script>
+   </body>
+</html>
