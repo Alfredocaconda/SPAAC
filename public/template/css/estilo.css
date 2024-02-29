@@ -1,0 +1,27 @@
+.inputs{
+    margin-top: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.botao{
+    background: none;
+   border: none;
+}
+.botao:hover{
+    color: #ff9907;
+}
+.ul{
+    margin-top: 10px;
+    display: block;
+    padding-left: 0;
+}
+.li{
+    display: inline-flex;
+    margin-left: 20px;
+    color: black;
+    cursor: pointer;
+}
+.li:hover{
+    border-bottom:2px solid #ff9907;
+}
