@@ -18,8 +18,13 @@ return new class extends Migration
             $table->string('volume', 10);
             $table->unsignedBigInteger("id_categoria");
             $table->unsignedBigInteger("id_autores");
+            $table->unsignedBigInteger("id_data");
+            $table->unsignedBigInteger("id_palavra_chave");
             $table->timestamps();
 
+         
+            $table->foreign('id_palavra_chave')->references('id')->on('palavra_chaves')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('id_data')->references('id')->on('data')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('id_categoria')->references('id')->on('categorias')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('id_autores')->references('id')->on('autors')->onDelete('cascade')->onUpdate('cascade');
         });

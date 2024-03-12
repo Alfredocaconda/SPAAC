@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('instituicao_vinculado', 100); 
             $table->string('nacionalidade', 15);
             $table->string('grau_academico', 25);
-            $table->unsignedBigInteger('usuario_id')->unique();
+            $table->unsignedBigInteger('usuario_id');
             $table->timestamps();
 
             $table->foreign('usuario_id')->references('id')->on('usuarios')->onDelete('cascade')->onUpdate('cascade');
