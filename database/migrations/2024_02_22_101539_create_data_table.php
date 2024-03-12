@@ -16,12 +16,8 @@ return new class extends Migration
             $table->date('data_submissao');
             $table->date('data_avaliacao');
             $table->date('data_publicacao');
-            $table->unsignedBigInteger("id_artigo_cientifico");
-            $table->unsignedBigInteger("id_monografia");
             $table->timestamps();
 
-            $table->foreign('id_monografia')->references('id')->on('monografias')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreign('id_artigo_cientifico')->references('id')->on('artigo_cintifico')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

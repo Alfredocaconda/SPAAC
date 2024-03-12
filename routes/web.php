@@ -28,6 +28,9 @@ Route::get('/sobre', function () {
 Route::get('/admin', function () {
     return view('Admin.dashboard.home');
 });
+Route::get('/user', function () {
+    return view('Admin.dashboard.user');
+});
 Route::get('/sobre', function () {
     return view('principal.Sobre.sobre');
 });
