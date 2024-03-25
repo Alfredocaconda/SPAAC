@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class PalavraChaveController extends Controller
+class AutorConroller extends Controller
 {
     //
 }
