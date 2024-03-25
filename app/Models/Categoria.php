@@ -8,15 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Categoria extends Model
 {
     use HasFactory;
-
-    public function monografia(): HasMany
-    {
-        return $this->hasMany(Monografia::class);
-    }
-
-    public function artigo_cientifico(): HasMany
-    {
-        return $this->hasMany(Artigo_cientifico::class);
-    }
-
+    protected $fillable=[
+        'nome_categoria',
+        'tipo_categoria'
+    ];
 }

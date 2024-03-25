@@ -5,13 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Monografia extends Model
+class Artigo_Cientifico extends Model
 {
     use HasFactory;
+    protected $table="artigo_cintificos";
     protected $fillable=[
-        'titulo_monografia',
-        'instituicao_ensino',
+        'titulo',
         'resumo',
+        'volume',
         'id_categoria',
         'id_autores',
         'id_data',
